@@ -3,4 +3,4 @@ project(Spring2019)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Spring2019 Ch6Warmup.cpp)
+add_executable(Spring2019 authorHints.cpp)

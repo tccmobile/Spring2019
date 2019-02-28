@@ -3,4 +3,4 @@ project(Spring2019)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Spring2019  challange681.cpp)
+add_executable(Spring2019 Ch6Warmup.cpp)

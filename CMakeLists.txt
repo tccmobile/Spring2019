@@ -3,4 +3,4 @@ project(Spring2019)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Spring2019  challenge761.cpp Person.cpp Person.h)
+add_executable(Spring2019 store.cpp ItemToPurchase.cpp ItemToPurchase.h)

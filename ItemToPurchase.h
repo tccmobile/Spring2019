@@ -16,17 +16,17 @@ private:
 public:
     ItemToPurchase();
 
-    const string &getItemName() const;
+    const string &GetName() const;
 
-    void setItemName(const string &itemName);
+    void SetName(const string &itemName);
 
-    int getItemPrice() const;
+    int GetPrice() const;
 
-    void setItemPrice(int itemPrice);
+    void SetPrice(int itemPrice);
 
-    int getItemQuantity() const;
+    int GetQuantity() const;
 
-    void setItemQuantity(int itemQuantity);
+    void SetQuantity(int itemQuantity);
 
 };
 

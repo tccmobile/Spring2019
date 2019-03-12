@@ -1,32 +1,56 @@
 #include <iostream>
-#include <cmath>
+#include "ItemToPurchase.h"
 using namespace std;
 
 int main() {
-    double x1=0.0;
-    double y1;
-    double x2;
-    double y2;
-    double xDist;
-    double yDist;
-    double pointsDistance;
 
-    xDist = 0.0;
-    yDist = 0.0;
-    pointsDistance = 0.0;
+    string itemName, tempPrice,tempQuantity;
+    int itemPrice, itemQuantity;
+    ItemToPurchase item1, item2;
 
-    cin >> x1;
-    cin >> y1;
-    cin >> x2;
-    cin >> y2;
+    cout<<"Item 1"<<endl;
+    cout<<"Enter the item name:"<<endl;
+    getline(cin,itemName);
+    cout<<"Enter the item price:"<<endl;
+    //cin>>itemPrice;
+    getline(cin,tempPrice);
+    cout<<"Enter the item quantity:"<<endl;
+    //cin>>itemQuantity;
+    getline(cin,tempQuantity);
 
-    /* Your solution goes here  */
+    itemPrice = stoi(tempPrice);
+    itemQuantity = stoi(tempQuantity);
 
-    pointsDistance = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    item1.SetName(itemName);
+    item1.SetPrice(itemPrice);
+    item1.SetQuantity(itemQuantity);
+
+    //cin.ignore();
 
 
+    cout<<"\nItem 2"<<endl;
+    cout<<"Enter the item name:"<<endl;
+    getline(cin,itemName);
+    cout<<"Enter the item price:"<<endl;
+    getline(cin,tempPrice);
+    cout<<"Enter the item quantity:"<<endl;
+    getline(cin,tempQuantity);
 
-    cout << pointsDistance << endl;
+    itemPrice = stoi(tempPrice);
+    itemQuantity = stoi(tempQuantity);
+
+    item2.SetName(itemName);
+    item2.SetPrice(itemPrice);
+    item2.SetQuantity(itemQuantity);
+
+    cout<<"\nTOTAL COST"<<endl;
+    cout<<item1.GetName()<<" "<<item1.GetQuantity()<<" @ $"<<item1.GetPrice()
+        <<" = $"<<(item1.GetQuantity()*item1.GetPrice())<<endl;
+    cout<<item2.GetName()<<" "<<item2.GetQuantity()<<" @ $"<<item2.GetPrice()
+        <<" = $"<<(item2.GetQuantity()*item2.GetPrice())<<endl;
+
+    cout<<"\nTotal: $"<<((item1.GetQuantity()*item1.GetPrice())+
+                        (item2.GetQuantity()*item2.GetPrice()))<<endl;
 
     return 0;
 }

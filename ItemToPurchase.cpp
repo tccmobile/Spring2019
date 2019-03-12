@@ -10,26 +10,26 @@ ItemToPurchase::ItemToPurchase() {
     itemPrice = 0;
 }
 
-const string &ItemToPurchase::getItemName() const {
+const string &ItemToPurchase::GetName() const {
     return itemName;
 }
 
-void ItemToPurchase::setItemName(const string &itemName) {
+void ItemToPurchase::SetName(const string &itemName) {
     ItemToPurchase::itemName = itemName;
 }
 
-int ItemToPurchase::getItemPrice() const {
+int ItemToPurchase::GetPrice() const {
     return itemPrice;
 }
 
-void ItemToPurchase::setItemPrice(int itemPrice) {
+void ItemToPurchase::SetPrice(int itemPrice) {
     ItemToPurchase::itemPrice = itemPrice;
 }
 
-int ItemToPurchase::getItemQuantity() const {
+int ItemToPurchase::GetQuantity() const {
     return itemQuantity;
 }
 
-void ItemToPurchase::setItemQuantity(int itemQuantity) {
+void ItemToPurchase::SetQuantity(int itemQuantity) {
     ItemToPurchase::itemQuantity = itemQuantity;
 }

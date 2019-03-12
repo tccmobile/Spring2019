@@ -11,14 +11,21 @@ using namespace std;
 class ItemToPurchase {
 private:
     string itemName;
+    string itemDescription;
     int itemPrice;
     int itemQuantity;
 public:
     ItemToPurchase();
 
+    ItemToPurchase(const string &itemName, const string &itemDescription, int itemPrice=0, int itemQuantity=0);
+
     const string &GetName() const;
 
     void SetName(const string &itemName);
+
+    const string &GetDescription() const;
+
+    void SetDescription(const string &itemDescription);
 
     int GetPrice() const;
 
@@ -27,6 +34,11 @@ public:
     int GetQuantity() const;
 
     void SetQuantity(int itemQuantity);
+
+    void PrintItemCost();
+
+    void PrintItemDescription();
+
 
 };
 

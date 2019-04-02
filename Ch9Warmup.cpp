@@ -25,7 +25,7 @@ int main() {
             cout << "Error: No comma in string." << endl;
             cout << "\nEnter input string:" << endl;
             getline(cin, userInput);
-            if (userInput!="q")
+            if (userInput=="q")
                 break;
 
         }
@@ -47,9 +47,9 @@ int main() {
                 newSecond << second.at(i);
             }
         }
-        cout << "First: ";
+        cout << "First word: ";
         cout << newFirst.str() << endl;
-        cout << "Second: ";
+        cout << "Second word: ";
         cout << newSecond.str() << endl;
 
         newFirst.str("");

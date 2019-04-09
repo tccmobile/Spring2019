@@ -3,6 +3,8 @@
 //
 
 #include "Person.h"
+#include <iostream>
+using namespace std;
 
 const string &Person::getName() const {
     return name;
@@ -23,3 +25,8 @@ void Person::setAge(int age) {
 Person::Person() { name="None"; age=0;}
 
 Person::Person(const string &name, int age) : name(name), age(age) {}
+
+void Person::printMe() {
+
+    cout<<getName()<<" is "<<getAge()<<" years old."<<endl;
+}

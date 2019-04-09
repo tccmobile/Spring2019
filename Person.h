@@ -25,6 +25,8 @@ public:
 
     Person(const string &name, int age);
 
+    virtual void printMe();
+
 };
 
 

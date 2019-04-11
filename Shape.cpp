@@ -4,6 +4,4 @@
 
 #include "Shape.h"
 
-double Shape::calcArea() {
-    return 0;
-}
+

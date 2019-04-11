@@ -10,7 +10,15 @@
 
 class Square: public Rectangle {
 public:
-    double calcArea();
+    double calcArea() override;
+
+    void setSide(double side);
+
+    double getSide();
+
+    Square();
+
+    Square(double side);
 };
 
 

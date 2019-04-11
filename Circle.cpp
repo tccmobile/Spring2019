@@ -7,3 +7,17 @@
 double Circle::calcArea() {
     return 3.14159 * radius * radius;
 }
+
+double Circle::getRadius() const {
+    return radius;
+}
+
+void Circle::setRadius(double radius) {
+    Circle::radius = radius;
+}
+
+Circle::Circle() {
+    radius = 1.0;
+}
+
+Circle::Circle(double radius) : radius(radius) {}

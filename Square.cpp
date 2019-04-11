@@ -5,5 +5,17 @@
 #include "Square.h"
 
 double Square::calcArea() {
-    return width *width;
+    return getWidth() * getWidth();
 }
+void Square::setSide(double side) {
+    setLength(side);
+    setWidth(side);
+}
+
+double Square::getSide() {
+    return getWidth();
+}
+
+Square::Square() {}
+
+Square::Square(double side) : Rectangle(side, side) {}

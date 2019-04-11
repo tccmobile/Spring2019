@@ -12,7 +12,19 @@ class Rectangle: public Shape {
 private:
     double length, width;
 public:
-    double calcArea();
+    double calcArea() override;
+
+    double getLength() const;
+
+    void setLength(double length);
+
+    double getWidth() const;
+
+    void setWidth(double width);
+
+    Rectangle();
+
+    Rectangle(double length, double width);
 
 };
 

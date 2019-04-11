@@ -14,6 +14,13 @@ private:
 public:
     double calcArea() override;
 
+    double getRadius() const;
+
+    void setRadius(double radius);
+
+    Circle();
+
+    Circle(double radius);
 };
 
 

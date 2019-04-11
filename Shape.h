@@ -8,7 +8,7 @@
 
 class Shape {
 public:
-    virtual double calcArea();
+    virtual double calcArea()=0;
 };
 
 

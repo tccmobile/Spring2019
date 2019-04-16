@@ -3,4 +3,4 @@ project(Spring2019)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Spring2019 Driver.cpp Driver.h testDriver.cpp Vehicle.cpp Vehicle.h)
+add_executable(Spring2019  powEx.cpp)

@@ -20,8 +20,8 @@ int main(){
 
          if (a/b<0){
 
-             throw "Negative division";
-            // throw  runtime_error("Exception: Division is negative");
+             //throw "Negative division";
+             throw  runtime_error("Exception: Division is negative");
          }
 
          cout<<"a/b = "<<(double)a/b<<endl;
@@ -30,9 +30,7 @@ int main(){
      catch (runtime_error& error){
         cout<<error.what()<<endl;
      }
-     catch (...){
-         cout<<"Bad result = "<<endl;
-     }
+
 
 
     return 0;
